@@ -5,7 +5,12 @@ const Content = () => {
   return (
     <>
       <Profile />
-      <Link />
+      <Link title={"Twitter Link"} link={"www.google.com"} />
+      <Link title={"Zuri Team"} link={"www.google.com"} />
+      <Link title={"Zuri  Books"} link={"www.google.com"} />
+      <Link title={"Python Books"} link={"www.google.com"} />
+      <Link title={"Backgroung Check for Coders"} link={"www.google.com"} />
+      <Link title={"Design Books"} link={"www.google.com"} />
     </>
   );
 };

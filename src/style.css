@@ -4,5 +4,62 @@
 }
 
 body {
-  background-color: #f4f5f7;
+  background-color: #f9fafc;
+}
+
+#profile__img {
+  height: 88px;
+  width: 88px;
+  border-radius: 50%;
+}
+
+.ProfileSection {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  position: relative;
+  margin-top: 10px;
+}
+
+#shareBtn {
+  position: absolute;
+  right: 150px;
+}
+
+.link {
+  margin: 20px 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 90%;
+  background-color: rgb(231, 229, 229);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.link > h3 > a {
+  text-decoration: none;
+  color: black;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 50px;
+}
+.slack {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-right: 20px;
+}
+
+.footer {
+  margin: 20px 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+  padding-top: 20px;
 }
