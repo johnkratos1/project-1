@@ -83,6 +83,29 @@ body {
   visibility: visible;
 }
 
+.shareText {
+  cursor: pointer;
+}
+.shareText::before {
+  content: attr(text);
+  visibility: hidden;
+  position: absolute;
+  background-color: rgba(7, 7, 7, 0.932);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 7px;
+  padding: 5px 5px;
+  transition: opacity 1s ease-in-out;
+
+  z-index: 1;
+  right: 24vw;
+  top: -2vh;
+}
+.shareText:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
 .social {
   display: flex;
   justify-content: center;
