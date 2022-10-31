@@ -5,12 +5,14 @@ import v4 from "./images/vector4.png";
 
 const Slack = () => {
   return (
-    <div className="slack">
-      <img src={v1} alt="slack vector" />
-      <img src={v2} alt="slack vector" />
-      <img src={v3} alt="slack vector" />
-      <img src={v4} alt="slack vector" />
-    </div>
+    <a href="https://hng9.slack.com">
+      <div className="slack">
+        <img src={v1} alt="slack vector" />
+        <img src={v2} alt="slack vector" />
+        <img src={v3} alt="slack vector" />
+        <img src={v4} alt="slack vector" />
+      </div>
+    </a>
   );
 };
 

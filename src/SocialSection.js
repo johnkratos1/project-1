@@ -5,6 +5,7 @@ const Social = () => {
   return (
     <div className="social">
       <Slack />
+      <div className="space"></div>
       <Git />
     </div>
   );

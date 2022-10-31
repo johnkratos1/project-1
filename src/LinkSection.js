@@ -1,10 +1,12 @@
-const Link = ({ title, link }) => {
+const Link = ({ title, link, target, subtext }) => {
   return (
-    <button className="link">
-      <h3>
-        <a href={`${link}`}> {title}</a>
-      </h3>
-    </button>
+    <div className="container">
+      <a target={target} href={link}>
+        <button className="link" subtext={subtext}>
+          <h3>{title}</h3>
+        </button>
+      </a>
+    </div>
   );
 };
 

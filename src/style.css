@@ -20,40 +20,81 @@ body {
   align-items: center;
   padding: 5px;
   position: relative;
-  margin-top: 10px;
+  margin-top: 30px;
+}
+.ProfileSection > h2 {
+  margin-top: 15px;
 }
 
 #shareBtn {
   position: absolute;
-  right: 150px;
+  right: 15vw;
+  top: -3vh;
 }
 
-.link {
-  margin: 20px 5%;
+#shareMobBtn {
+  position: absolute;
+  right: 99999999px;
+}
+
+.container > a > .link {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   background-color: rgb(231, 229, 229);
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  position: relative;
 }
-.link > h3 > a {
+.container > a {
   text-decoration: none;
   color: black;
+}
+.container {
+  height: 50px;
+  width: 90%;
+  margin: 20px 5%;
+  border-radius: 5px;
+}
+
+.link::before {
+  content: attr(subtext);
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  width: 60%;
+  background-color: rgba(58, 58, 58, 0.466);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0px;
+  transition: opacity 1s ease-in-out;
+  margin: 0 20%;
+
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+.link:hover:before {
+  opacity: 1;
+  visibility: visible;
 }
 
 .social {
   display: flex;
   justify-content: center;
-  margin: 10px 0 50px;
+  margin: 40px 0 30px;
 }
 .slack {
   display: grid;
   grid-template-columns: auto auto;
-  margin-right: 20px;
+  /* margin-right: 20px; */
+}
+.space {
+  width: 3.5vw;
 }
 
 .footer {
@@ -62,4 +103,31 @@ body {
   justify-content: space-between;
   border-top: 1px solid gray;
   padding-top: 20px;
+  color: rgb(58, 58, 58);
+}
+.footer > img {
+  width: 100px;
+  height: 20px;
+}
+.footer > p {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+  #shareMobBtn {
+    position: absolute;
+    right: 15vw;
+    top: -3vh;
+  }
+  #shareBtn {
+    display: none;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+  }
+  .footer > p {
+    margin: 10px 0px;
+  }
 }
