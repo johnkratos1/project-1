@@ -1,10 +1,14 @@
 {
   "files": {
-    "main.js": "/https//johnkratos1.github.io/project-1/static/js/main.7912f0ad.js",
-    "index.html": "/https//johnkratos1.github.io/project-1/index.html",
-    "main.7912f0ad.js.map": "/https//johnkratos1.github.io/project-1/static/js/main.7912f0ad.js.map"
+    "main.css": "/project-1/static/css/main.b3187896.css",
+    "main.js": "/project-1/static/js/main.f9155dfb.js",
+    "static/media/avatar.jpg": "/project-1/static/media/avatar.347126b2197a9c468fbe.jpg",
+    "index.html": "/project-1/index.html",
+    "main.b3187896.css.map": "/project-1/static/css/main.b3187896.css.map",
+    "main.f9155dfb.js.map": "/project-1/static/js/main.f9155dfb.js.map"
   },
   "entrypoints": [
-    "static/js/main.7912f0ad.js"
+    "static/css/main.b3187896.css",
+    "static/js/main.f9155dfb.js"
   ]
 }
